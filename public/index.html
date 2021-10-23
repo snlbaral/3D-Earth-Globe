@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Joins</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./build/three.module.js",
+                "three/examples/controls/OrbitControls": "./jsm/controls/OrbitControls.js"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="topbar">
+        <div class="left-cont">
+            <select class="find">
+                <option value="">Select A City</option>
+            </select>
+            <button class="reset">Reset</button>
+        </div>
+        <div class="toggle-switch">
+            <input class="toggle toggle-menu" id="toggle-switch" type="checkbox"/>
+            <label class="toggle-btn" for="toggle-switch"></label>
+        </div>
+    </div>
+    <div class="hero">
+        
+        <div class="content">
+            <h1>Explore Destinations</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quos quae officia soluta ipsa beatae non nobis nihil, eum quisquam, praesentium eaque recusandae voluptatum et est nisi excepturi quidem odit.</p>
+            <button class="demo-btn">Explore More</button>
+        </div>
+        <div class="canvas">
+            <canvas class="earth"></canvas>
+        </div>
+    </div>
+    <div class="place-container"></div>
+    <script type="module" src="./client.js"></script>
+</body>
+</html>
